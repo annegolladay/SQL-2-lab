@@ -15,11 +15,12 @@ VALUES ('Daisy', 'dog', 2, 'Lehi'), ('Rosie', 'puppy', 4, 'Mesa'), ('Lily', 'pup
 -- 4. Change the “type” column’s name to be “species”.
 
 alter table animals
-rename column type TO 'species';
+rename column type 
+to species;
 
 
 -- Change the “species” column data type to be VARCHAR.
 
 alter table animals
 alter species
-set data type varchar(80);
+set data type VARCHAR(80);
